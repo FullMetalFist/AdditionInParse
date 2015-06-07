@@ -2,16 +2,13 @@
 //  AppDelegate.m
 //  AdditionInParseObjC
 //
-//  Created by Michael Vilabrera on 6/6/15.
+//  Created by Michael Vilabrera on 6/7/15.
 //  Copyright (c) 2015 Giving Tree. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 
 @interface AppDelegate ()
-
-@property (nonatomic) ViewController *viewController;
 
 @end
 
@@ -20,11 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
     return YES;
 }
 
